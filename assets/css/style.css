@@ -179,10 +179,12 @@ h3, h2 {
 /* contact page */
 
 #contact-form ul {
+  padding: 0;
   margin-bottom: 20px;
 }
 
 #contact-form li {
+  list-style-type: none;
   margin-bottom: 10px;
 }
 
@@ -214,4 +216,102 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+  .main-section {
+    width: 90%;
+  }
+  .container {
+    width: 65%;
+    float: left;
+    margin-left: 20px;
+  }
+  .work h3 {
+    width: 80%;
+    font-size: 100%
+  }
+  .work img {
+    width: 80%;
+
+  }
+
+  h1 {
+
+    margin-top: 10px
+  }
+  
+
+  .work:nth-child(even) {
+    margin-right: 0px;
+
+  }
+
+  .work {
+    width: 50%;
+    height: 50%;
+    
+  }
+  #masthead {
+    float: right;
+    margin-right: 5%;
+    font-size: 75%;
+    width: 140%
+    }
+  }
+    
+
+@media screen and (max-width: 768px) {
+  .container {
+    width:95%;
+  }
+
+  .work {
+    margin-right: 0px;
+    
+  }
+  #masthead {
+    width: 100%;
+
+  }
+  
+  .main-section {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  nav {
+    float: none;
+    text-align: center;
+
+  }
+  a#logo {
+    float: none;
+    width: 200px;
+
+
+  }
+
+  .work h3 {
+    left:23px;
+
+  }
+
+  h1 {
+    text-align: left;
+
+  }
+
+  .main-section {
+    clear:both;
+    position:relative;
+    top: 45px;
+  }
+ .container {
+   text-align:center;
+   float: none
+ }
+  }
 }
